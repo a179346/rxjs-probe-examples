@@ -1,0 +1,47 @@
+{
+  "name": "rxjs-probe-examples",
+  "version": "1.0.0",
+  "description": "An example of utilizing the rxjs-probe library",
+  "scripts": {
+    "subscribe": "tsx src/subscribe.example.ts",
+    "wait-for-healthy": "tsx src/wait-for-healthy.example.ts",
+    "custom-probe-performer": "tsx src/custom-probe-performer.example.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a179346/rxjs-probe-examples.git"
+  },
+  "keywords": [
+    "rxjs-probe",
+    "rxjs",
+    "probe",
+    "node",
+    "browser",
+    "ts",
+    "typescript"
+  ],
+  "author": "a179346 <r122164152@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a179346/rxjs-probe-examples/issues"
+  },
+  "homepage": "https://github.com/a179346/rxjs-probe",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@types/prettier": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@rxjs-probe/http-probe-performer": "^1.0.0-alpha.0",
+    "axios": "^1.7.7"
+  }
+}
