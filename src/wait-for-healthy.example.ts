@@ -1,7 +1,6 @@
-import { takeWhile } from 'rxjs/operators';
+import { firstValueFrom, filter } from 'rxjs';
 import { Probe } from '@rxjs-probe/core';
 import { HttpProbePerformer } from '@rxjs-probe/http-probe-performer';
-import { lastValueFrom } from 'rxjs';
 
 main();
 
@@ -16,7 +15,6 @@ async function main() {
   });
 
   console.log('Waiting for healthy status...');
-  await lastValueFrom(probe.getObservable().pipe(takeWhile(status => status !== 'healthy')));
-
+  await firstValueFrom(probe.getObservable().pipe(filter(status => status === 'healthy')));
   console.log('Healthy!');
 }
