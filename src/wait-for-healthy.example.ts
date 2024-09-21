@@ -15,6 +15,6 @@ async function main() {
   });
 
   console.log('Waiting for healthy status...');
-  await firstValueFrom(probe.getObservable().pipe(filter(status => status === 'healthy')));
+  await firstValueFrom(probe.createObservable().pipe(filter(status => status === 'healthy')));
   console.log('Healthy!');
 }

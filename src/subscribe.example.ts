@@ -14,6 +14,6 @@ const probe = new Probe({
   failureThreshold: 1,
 });
 
-probe.getObservable().subscribe(status => {
+probe.createObservable().subscribe(status => {
   console.log('status:', status);
 });

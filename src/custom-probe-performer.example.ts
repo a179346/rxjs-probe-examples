@@ -12,6 +12,6 @@ const probe = new Probe({
   }),
 });
 
-probe.getObservable().subscribe(status => {
+probe.createObservable().subscribe(status => {
   console.log('status:', status);
 });
