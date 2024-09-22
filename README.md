@@ -81,15 +81,17 @@ npm run custom-probe-performer
 import { Probe, ProbePerformer } from '@rxjs-probe/core';
 import axios from 'axios';
 
+const customProbePerformer = new ProbePerformer(async timeoutSeconds => {
+  console.log('Performing probe...');
+  await axios({
+    url: 'https://github.com/a179346/rxjs-probe',
+    timeout: timeoutSeconds * 1000,
+    validateStatus: status => status === 200,
+  });
+});
+
 const probe = new Probe({
-  performer: new ProbePerformer(async timeoutSeconds => {
-    console.log('Performing probe...');
-    await axios({
-      url: 'https://github.com/a179346/rxjs-probe',
-      timeout: timeoutSeconds * 1000,
-      validateStatus: status => status === 200,
-    });
-  }),
+  performer: customProbePerformer,
 });
 
 probe.createObservable().subscribe(status => {
