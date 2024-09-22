@@ -17,3 +17,7 @@ const probe = new Probe({
 probe.createObservable().subscribe(status => {
   console.log('status:', status);
 });
+
+// Expected output:
+// 0s -> status: unknown
+// 1s -> status: healthy
