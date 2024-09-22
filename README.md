@@ -1,8 +1,8 @@
 # rxjs-probe-examples
 
-- [Subscribe](#subscribe)
-- [Wait for healthy](#wait-for-healthy)
-- [Custom probe performer](#custom-probe-performer)
+- [Subscribe](#-subscribe)
+- [Wait for healthy](#-wait-for-healthy)
+- [Custom probe performer](#-custom-probe-performer)
 
 ### 🌈 Subscribe
 
