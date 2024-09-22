@@ -1,5 +1,7 @@
 # rxjs-probe-examples
 
+> An example of utilizing the [rxjs-probe](https://github.com/a179346/rxjs-probe) library.
+
 - [Subscribe](#-subscribe)
 - [Wait for healthy](#-wait-for-healthy)
 - [Custom probe performer](#-custom-probe-performer)
