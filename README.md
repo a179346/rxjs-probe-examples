@@ -4,7 +4,7 @@
 - [Wait for healthy](#wait-for-healthy)
 - [Custom probe performer](#custom-probe-performer)
 
-### Subscribe
+### 🌈 Subscribe
 
 ```sh
 npm run subscribe
@@ -36,7 +36,7 @@ probe.createObservable().subscribe(status => {
 // 1s -> status: healthy
 ```
 
-### Wait for healthy
+### 🌈 Wait for healthy
 
 ```sh
 npm run wait-for-healthy
@@ -71,7 +71,7 @@ async function main() {
 // 3s -> Healthy!
 ```
 
-### Custom probe performer
+### 🌈 Custom probe performer
 
 ```sh
 npm run custom-probe-performer
